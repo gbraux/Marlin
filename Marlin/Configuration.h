@@ -113,7 +113,7 @@
 
 // This determines the communication speed of the printer
 // :[2400,9600,19200,38400,57600,115200,250000]
-#define BAUDRATE 250000
+#define BAUDRATE 115200
 
 // Enable the Bluetooth serial interface on AT90USB devices
 //#define BLUETOOTH
@@ -232,7 +232,7 @@
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
-#define TEMP_SENSOR_BED 5
+//#define TEMP_SENSOR_BED 5
 
 // This makes temp sensor 1 a redundant sensor for sensor 0. If the temperatures difference between these sensors is to high the print will be aborted.
 //#define TEMP_SENSOR_1_AS_REDUNDANT
@@ -726,6 +726,7 @@
 #define MANUAL_Y_HOME_POS 80
 #define MANUAL_Z_HOME_POS 0 // Distance between the nozzle to printbed after homing
 
+
 // Use "Z Safe Homing" to avoid homing with a Z probe outside the bed area.
 //
 // With this feature enabled:
@@ -764,6 +765,7 @@
 #define DEFAULT_XYJERK                20.0    // (mm/sec)
 #define DEFAULT_ZJERK                 0.4     // (mm/sec)
 #define DEFAULT_EJERK                 5.0    // (mm/sec)
+
 
 
 //=============================================================================
@@ -1172,6 +1174,7 @@
 //
 //#define BQ_LCD_SMART_CONTROLLER
 
+
 //
 // CONTROLLER TYPE: I2C
 //
@@ -1189,6 +1192,7 @@
 // Sainsmart YW Robot (LCM1602) LCD Display
 //
 //#define LCD_I2C_SAINSMART_YWROBOT
+
 
 //
 // Generic LCM1602 LCD adapter
@@ -1212,6 +1216,7 @@
 // integrated click & L/R/U/D buttons, separate encoder inputs.
 //
 //#define LCD_I2C_VIKI
+
 
 //
 // SSD1306 OLED full graphics generic display
